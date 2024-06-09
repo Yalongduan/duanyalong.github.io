@@ -30,19 +30,21 @@ markdown: kramdown
 header_pages:
   - about.markdown
 # Build settings
-theme: minima
+remote_theme: "mmistakes/minimal-mistakes@4.26.1"
+# theme: minima
 # theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
   - jekyll-admin
-  
+  - jekyll-include-cache
+
 # Jekyll Admin configs
 jekyll_admin:
   hidden_links:
-    # - pages
-    # - staticfiles
-    # - datafiles
-    # - configuration
+    - pages
+    - staticfiles
+    - datafiles
+    - configuration
   homepage: "posts"
 # Exclude from processing.
 # The following items will not be processed, by default.
