@@ -36,6 +36,7 @@ remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
   - jekyll-feed
   - jekyll-admin
+  - jekyll-include-cache
   
 # Jekyll Admin configs
 jekyll_admin:
