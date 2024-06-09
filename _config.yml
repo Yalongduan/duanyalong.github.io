@@ -31,7 +31,7 @@ header_pages:
   - about.markdown
 # Build settings
 # theme: minima
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+remote_theme: "mmistakes/minimal-mistakes@4.26.1"
 # theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
