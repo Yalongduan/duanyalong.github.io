@@ -30,8 +30,8 @@ markdown: kramdown
 header_pages:
   - about.markdown
 # Build settings
-theme: minima
-# theme: minimal-mistakes-jekyll
+# theme: minima
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
   - jekyll-admin
