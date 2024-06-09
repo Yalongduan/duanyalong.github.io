@@ -16,6 +16,7 @@ gem "jekyll", "~> 4.3.3"
 # gem "minima", "~> 2.5"
 # 自定义导入
 gem "github-pages", group: :jekyll_plugins
+gem "jekyll-include-cache", group: :jekyll_plugins
 gem "minimal-mistakes-jekyll"
 gem 'rack'
 gem 'rackup' 
