@@ -2,7 +2,14 @@
 layout: single
 title:  "Welcome to Jekyll!"
 date:   2024-06-09 14:09:15 +0800
-categories: jekyll update
+categories: 项目搭建
+tag: jekyll
+collection: 项目 # collection name
+entries_layout: # list (default), grid
+show_excerpts: # true (default), false
+sort_by: # date (default), title or any metadata key added to the collection's documents
+sort_order: # forward (default), reverse
+
 ---
 <meta name="msvalidate.01" content="0FC3FD70512616B052E755A56F8952D" />
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.

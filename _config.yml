@@ -24,8 +24,8 @@ description              : "An amazing website."
 url                      : "https://yalongduan.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "Yalongduan/yalongduan.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/images/cat.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # "/images/cat.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+teaser                   : "/assets/images/cat.png" # path of fallback teaser image, e.g. "/assets/assets/images/500x300.png"
+logo                     : # "/assets/images/cat.png" # path of logo image to display in the masthead, e.g. "/assets/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
@@ -115,7 +115,7 @@ analytics:
 # Site Author
 author:
   name             : "段亚龙"
-  avatar           : "/images/Phuket Beach.jpg" # /images/普吉岛海滩.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/Phuket Beach.jpg" # /assets/images/普吉岛海滩.jpg" # path of avatar image, e.g. "/assets/assets/images/bio-photo.jpg"
   bio              : "知之为知之，不知为不知。"
   location         : "四川成都"
   email            : 
@@ -232,29 +232,29 @@ timezone: # "Asia/Shanghai" # https://en.wikipedia.org/wiki/List_of_tz_database_
 
 
 # Pagination with jekyll-paginate
-# paginate: 5 # amount of posts to show
+paginate: 2 # amount of posts to show
 # paginate_path: /page:num/
 
 # Pagination with jekyll-paginate-v2
 # See https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
 #   for configuration details
-pagination:
-  # Set enabled to true to use paginate v2
-  enabled: true
-  debug: false
-  collection: 'posts'
-  per_page: 5
-  permalink: '/page/:num/'
-  title: ':title - page :num'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
-  category: 'posts'
-  tag: ''
-  locale: ''
-  trail:
-    before: 2
-    after: 2
+# pagination:
+#   # Set enabled to true to use paginate v2
+#   enabled: true
+#   debug: false
+#   collection: 'posts'
+#   per_page: 2
+#   permalink: '/page/:num/'
+#   title: ':title - page :num'
+#   limit: 0
+#   sort_field: 'date'
+#   sort_reverse: true
+#   category: 'posts'
+#   tag: ''
+#   locale: ''
+#   trail:
+#     before: 2
+#     after: 2
 
 
 # Plugins (previously gems:)
@@ -342,7 +342,8 @@ defaults:
       show_date: true
       author_profile: true
       toc: true
-      toc_label: "Titles"
+      toc_label: "Catalog"
+      toc_sticky: true
       # toc_icon: "cog"
 date_format: "%Y/%m/%d %H:%M:%S(%A)"
 # defaults:
