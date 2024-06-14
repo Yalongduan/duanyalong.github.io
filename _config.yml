@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "sunrise" # "default" "air", "aqua", "contrast", "dar
 
 # Site Settings
 locale                   : "zh-CN"
-title                    : "笔记本"
+title                    : "笔下世界"
 title_separator          : "-"
 subtitle                 : # "Version 1.0" # site tagline that appears below site title in masthead
-name                     : "段亚龙"
-description              : "An amazing website."
+name                     : "乐翁"
+description              : "97青年，积极向上."
 url                      : "https://yalongduan.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "Yalongduan/yalongduan.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -114,7 +114,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "段亚龙"
+  name             : "乐翁"
   avatar           : "/assets/images/Phuket Beach.jpg" # /assets/images/普吉岛海滩.jpg" # path of avatar image, e.g. "/assets/assets/images/bio-photo.jpg"
   bio              : "知之为知之，不知为不知。"
   location         : "四川成都"
@@ -126,9 +126,9 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+    - label: "WeChat"
+      icon: "fab fa-brands fa-weixin"
+      url: "test"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
@@ -160,7 +160,15 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
-
+# header:
+#   image: /assets/images/road.jpg
+sidebar:
+  - title: "Title"
+    image: /assets/images/road.jpg
+    image_alt: "image"
+    text: "Some text here."
+  - title: "Another Title"
+    text: "More text here."
 
 # Reading Files
 include:
@@ -232,29 +240,29 @@ timezone: # "Asia/Shanghai" # https://en.wikipedia.org/wiki/List_of_tz_database_
 
 
 # Pagination with jekyll-paginate
-paginate: 2 # amount of posts to show
+# paginate: 2 # amount of posts to show
 # paginate_path: /page:num/
 
 # Pagination with jekyll-paginate-v2
 # See https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
 #   for configuration details
-# pagination:
-#   # Set enabled to true to use paginate v2
-#   enabled: true
-#   debug: false
-#   collection: 'posts'
-#   per_page: 2
-#   permalink: '/page/:num/'
-#   title: ':title - page :num'
-#   limit: 0
-#   sort_field: 'date'
-#   sort_reverse: true
-#   category: 'posts'
-#   tag: ''
-#   locale: ''
-#   trail:
-#     before: 2
-#     after: 2
+pagination:
+  # Set enabled to true to use paginate v2
+  enabled: true
+  debug: false
+  collection: 'posts'
+  per_page: 2
+  permalink: '/page/:num/'
+  title: ':title - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  category: 'posts'
+  tag: ''
+  locale: ''
+  trail:
+    before: 2
+    after: 2
 
 
 # Plugins (previously gems:)
@@ -334,7 +342,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: true
       comments: true # true
       share: false
@@ -342,17 +350,37 @@ defaults:
       show_date: true
       author_profile: true
       toc: true
-      toc_label: "Catalog"
+      toc_label: "目录"
       toc_sticky: true
       # toc_icon: "cog"
+      sidebar:
+        nav: "docs"
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      comments: false
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      share: false
 date_format: "%Y/%m/%d %H:%M:%S(%A)"
-# defaults:
-#   # _pages
-#   - scope:
-#       path: ""
-#       type: pages
-#     values:
-#       layout: single
+  # _pages
+
+# collections
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+
+
 # defaults:
 #   # _foo
 #   - scope:
@@ -360,5 +388,3 @@ date_format: "%Y/%m/%d %H:%M:%S(%A)"
 #       type: foo
 #     values:
 #       layout: single
-sidebar:
-  nav: "docs"

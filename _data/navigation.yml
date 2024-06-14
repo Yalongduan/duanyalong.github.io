@@ -3,30 +3,27 @@ main:
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   #   description: "快速开始"
-  - title: "Home"
-    url: /index
-  - title: "About"
-    url: /about/
-  - title: "Posts"
+  - title: "主页"
+    url: /
+  - title: "时间线"
     url: /year-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
-  - title: "Categories"
+  - title: "分类"
     url: /categories/
-  - title: "foo"
-    url: /categories/foo
-  - title: "Tags"
+  - title: "Portfolio"
+    url: /Portfolio/
+  - title: "标签"
     url: /tags/
   # - title: "Pages"
   #   url: /page-archive/
-  - title: "Collections"
+  - title: "特殊集合"
     url: /recipes/
-  - title: "External Link"
+  - title: "关于"
+    url: /about/
+  - title: "其他链接"
     url: https://google.com
     target: _blank
-    
-sidebar:
-  nav: "docs"
 
 docs:
   - title: Getting Started

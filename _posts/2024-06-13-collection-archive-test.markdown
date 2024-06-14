@@ -20,6 +20,42 @@ gallery:
     image_path: /assets/images/road.jpg
     alt: "placeholder image 3"
     title: "Image 3 title caption"
+excerpt: "This post should display a **header with an overlay image**, if the theme supports it."
+header:
+  overlay_image: /assets/images/road.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  tagline: tagline
+  actions:
+    - label: "More Info"
+      url: "https://unsplash.com"
+  # overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+# header:
+#   image: /assets/images/road.jpg
+  # og_image: /assets/images/road.jpg
+  video:
+    id: BV1E7411e7hC
+    provider: bilibili
+    danmaku: 1
+
+feature_row:
+  - image_path: /assets/images/road.jpg
+    alt: "placeholder image 1"
+    title: "Placeholder 1"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+  - image_path: /assets/images/road.jpg
+    alt: "placeholder image 2"
+    title: "Placeholder 2"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--inverse"
+  - image_path: /assets/images/road.jpg
+    title: "Placeholder 3"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+
+sidebar:
+  nav: "main"
+
 ---
 {% include figure popup=true image_path="/assets/images/road.jpg" alt="this is a placeholder image" caption="This is a figure caption." %}
 <figure>
@@ -34,6 +70,8 @@ gallery:
 # 一级标题
 ## 二级标题
 ### 三级标题
+{% include feature_row %}
+{% include video id="BV1E7411e7hC" provider="bilibili" danmaku="1" %}
 
 {% capture written_label %}'None'{% endcapture %}
 
