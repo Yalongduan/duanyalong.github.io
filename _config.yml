@@ -11,7 +11,7 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-# remote_theme             : "mmistakes/minimal-mistakes@4.26.1"
+remote_theme             : "mmistakes/minimal-mistakes@4.26.1"
 minimal_mistakes_skin    : "default" # "default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -398,8 +398,6 @@ collections:
 #       type: foo
 #     values:
 #       layout: single
-<<<<<<< HEAD
-=======
 
 # jekyll_admin:
 #   hidden_links:
@@ -408,4 +406,3 @@ collections:
 #     # - datafiles
 #     # - configuration
 #   homepage: "posts"
->>>>>>> parent of 40bb4fa (测试)
