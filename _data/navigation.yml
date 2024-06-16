@@ -11,19 +11,19 @@ main:
   #   url: /sitemap/
   - title: "分类"
     url: /categories/
-  # - title: "Portfolio"
-  #   url: /Portfolio/
+  - title: "Portfolio"
+    url: /Portfolio/
   - title: "标签"
     url: /tags/
   # - title: "Pages"
   #   url: /page-archive/
-  # - title: "特殊集合"
-    # url: /recipes/
+  - title: "特殊集合"
+    url: /recipes/
   - title: "关于"
     url: /about/
-  # - title: "其他链接"
-    # url: https://google.com
-    # target: _blank
+  - title: "其他链接"
+    url: https://google.com
+    target: _blank
 
 docs:
   - title: Getting Started
