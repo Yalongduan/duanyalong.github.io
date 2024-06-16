@@ -3,27 +3,49 @@ main:
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   #   description: "快速开始"
-  - title: "主页"
-    url: /
-  - title: "时间线"
+  - title: "Home"
+    url: /index
+  - title: "About"
+    url: /about/
+  - title: "Posts"
     url: /year-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
-  - title: "分类"
+  - title: "Categories"
     url: /categories/
-  - title: "Portfolio"
-    url: /Portfolio/
+  # - title: "Portfolio"
+  #   url: /Portfolio/
   - title: "标签"
     url: /tags/
   # - title: "Pages"
   #   url: /page-archive/
-  - title: "特殊集合"
-    url: /recipes/
+  # - title: "特殊集合"
+    # url: /recipes/
   - title: "关于"
     url: /about/
+<<<<<<< HEAD
   - title: "其他链接"
     url: https://google.com
     target: _blank
+=======
+  # - title: "其他链接"
+    # url: https://google.com
+    # target: _blank
+  - title: "foo"
+    url: /categories/foo
+  - title: "Tags"
+    url: /tags/
+  # - title: "Pages"
+  #   url: /page-archive/
+  - title: "Collections"
+    url: /recipes/
+  - title: "External Link"
+    url: https://google.com
+    target: _blank
+    
+sidebar:
+  nav: "docs"
+>>>>>>> parent of 40bb4fa (测试)
 
 docs:
   - title: Getting Started
