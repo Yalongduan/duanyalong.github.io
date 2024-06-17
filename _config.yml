@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "default" "air", "aqua", "contrast", "dar
 
 # Site Settings
 locale                   : "zh-CN"
-title                    : "笔记本"
+title                    : "笔下世界"
 title_separator          : "-"
 subtitle                 : # "Version 1.0" # site tagline that appears below site title in masthead
 name                     : "段亚龙"
