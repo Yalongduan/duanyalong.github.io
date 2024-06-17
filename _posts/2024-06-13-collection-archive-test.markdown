@@ -1,9 +1,9 @@
 ---
 title: Portfolio
-layout: collection
-category: foo
-permalink: /portfolio/
-collection: portfolio
+# layout: collection
+# category: foo
+# permalink: /portfolio/
+# collection: portfolio
 entries_layout: grid
 classes: wide
 excerpt: "节选，内容简要"

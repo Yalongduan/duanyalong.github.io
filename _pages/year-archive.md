@@ -1,10 +1,13 @@
 ---
-layout: tags
-title: 标签
-permalink: /tags/
+layout: posts
+title: 年度
+permalink: /year-archive/
 author_profile: true
 header:
+  # overlay_color: "#5e616c"
   overlay_image: /assets/images/road.jpg
+  # image: /assets/images/road.jpg
+  # og_image: /assets/images/cat.png
   actions:
     - label: "<i class='fas fa-fw fa-envelope-square'></i> 32588@88.com"
       url: "mailto:32588@88.com"
@@ -22,7 +25,6 @@ excerpt:
           <div class="current-time" id="current-time"></div>
       </div>
 ---
-
 <script>
   document.addEventListener("DOMContentLoaded", function() {
       function updateTime() {

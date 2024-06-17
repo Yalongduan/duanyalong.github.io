@@ -1,6 +1,8 @@
 ---
-layout: home
+# layout: home
 permalink: /
+# pagination:
+#   enabled: true
 author:
   name             : "乐翁"
   avatar           : "/assets/images/Phuket Beach.jpg" # /assets/images/普吉岛海滩.jpg" # path of avatar image, e.g. "/assets/assets/images/bio-photo.jpg"
@@ -58,7 +60,7 @@ excerpt:
 
 ---
 
-{% include feature_row %}
+<!-- {% include feature_row %} -->
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {

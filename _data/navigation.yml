@@ -5,7 +5,7 @@ main:
   #   description: "快速开始"
   - title: "主页"
     url: /index
-  - title: "年份"
+  - title: "年度"
     url: /year-archive/
   - title: "分类"
     url: /categories/

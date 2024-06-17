@@ -22,7 +22,7 @@ subtitle                 : # "Version 1.0" # site tagline that appears below sit
 name                     : "段亚龙"
 description              : "An amazing website."
 url                      : "https://yalongduan.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Yalongduan/yalongduan.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/cat.png" # path of fallback teaser image, e.g. "/assets/assets/images/500x300.png"
 logo                     : # "/assets/images/cat.png" # path of logo image to display in the masthead, e.g. "/assets/assets/images/88x88.png"
@@ -235,34 +235,29 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+permalink: /:year/:month/:day/:title/
 timezone: # "Asia/Shanghai" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Pagination with jekyll-paginate
-paginate: 2 # amount of posts to show
+# paginate: 2 # amount of posts to show
 # paginate_path: /page:num/
 
 # Pagination with jekyll-paginate-v2
 # See https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
 #   for configuration details
-# pagination:
-#   # Set enabled to true to use paginate v2
-#   enabled: true
-#   debug: false
-#   collection: 'posts'
-#   per_page: 2
-#   permalink: '/page/:num/'
-#   title: ':title - page :num'
-#   limit: 0
-#   sort_field: 'date'
-#   sort_reverse: true
-#   category: 'posts'
-#   tag: ''
-#   locale: ''
-#   trail:
-#     before: 2
-#     after: 2
+pagination:
+  enabled: true
+  collection: 'posts'
+  per_page: 1
+  permalink: '/page/:num/'  # Pages are index.html inside this folder (default)
+  title: ':title - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  trail:
+    before: 2
+    after: 2
 
 
 # Plugins (previously gems:)
@@ -272,6 +267,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-archives
   # - jekyll-admin
 
 # mimic GitHub Pages with --safe
@@ -281,6 +277,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-archives
   # - jekyll-admin
 
 
@@ -311,23 +308,22 @@ whitelist:
 #   permalinks:
 #     category: /categories/:name/
 #     tag: /tags/:name/
-category_archive:
-  type: jekyll-archives
-  path: /categories/
-tag_archive:
-  type: jekyll-archives
-  path: /tags/
+# category_archive:
+#   type: jekyll-archives
+#   path: /categories/
+# tag_archive:
+#   type: jekyll-archives
+#   path: /tags/
 jekyll-archives:
   enabled:
     - categories
     - tags
   layouts:
-    category: archive-taxonomy
-    tag: archive-taxonomy
+    category: archive_category
+    tag: archive_tag
   permalinks:
     category: /categories/:name/
     tag: /tags/:name/
-
 
 # HTML Compression
 # - https://jch.penibelst.de/
@@ -354,41 +350,41 @@ defaults:
       toc_label: "目录"
       toc_sticky: true
       # toc_icon: "cog"
-      sidebar:
-      #   nav: "docs"
-      # header:
-      #   overlay_image: /assets/images/road.jpg
-      #   actions:
-      #     - label: "<i class='fas fa-fw fa-envelope-square'></i> Email"
-      #       url: "mailto:32588@88.com"
-      #     - label: "<i class='fab fa-brands fa-weixin'></i> WeChat "
-      #       url: /assets/images/WeChat.jpg
-      #     - label: "<i class='fab fa-fw fa-github'></i> GitHub"
-      #       url: "https://github.com/Yalongduan"
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: false
-      comments: false
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: false
-      share: false
+  #     sidebar:
+  #     #   nav: "docs"
+  #     # header:
+  #     #   overlay_image: /assets/images/road.jpg
+  #     #   actions:
+  #     #     - label: "<i class='fas fa-fw fa-envelope-square'></i> Email"
+  #     #       url: "mailto:32588@88.com"
+  #     #     - label: "<i class='fab fa-brands fa-weixin'></i> WeChat "
+  #     #       url: /assets/images/WeChat.jpg
+  #     #     - label: "<i class='fab fa-fw fa-github'></i> GitHub"
+  #     #       url: "https://github.com/Yalongduan"
+  # # _pages
+  # - scope:
+  #     path: ""
+  #     type: _pages
+  #   values:
+  #     layout: home
+  #     author_profile: true
+  #     comments: false
+  # # _portfolio
+  # - scope:
+  #     path: ""
+  #     type: portfolio
+  #   values:
+  #     layout: single
+  #     author_profile: false
+  #     share: false
 date_format: "%Y/%m/%d %H:%M:%S(%A)"
   # _pages
 
-# collections
-collections:
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
+# # collections
+# collections:
+#   portfolio:
+#     output: true
+#     permalink: /:collection/:path/
 
 
 # defaults:
