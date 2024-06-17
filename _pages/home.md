@@ -1,6 +1,10 @@
 ---
 layout: home
 permalink: /
+author:
+  name             : "乐翁"
+  avatar           : "/assets/images/Phuket Beach.jpg" # /assets/images/普吉岛海滩.jpg" # path of avatar image, e.g. "/assets/assets/images/bio-photo.jpg"
+  bio              : "Don't stop"
 author_profile: true
 hidden: true
 # sidebar:
