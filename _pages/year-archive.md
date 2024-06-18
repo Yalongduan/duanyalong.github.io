@@ -1,8 +1,10 @@
 ---
 layout: posts
 title: 年度
-permalink: /year-archive/
+permalink: /year-archive
 author_profile: true
+pagination:
+  enabled: true
 header:
   # overlay_color: "#5e616c"
   overlay_image: /assets/images/road.jpg

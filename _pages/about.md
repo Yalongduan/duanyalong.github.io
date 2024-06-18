@@ -1,7 +1,7 @@
 ---
 layout: splash
 title: 关于
-permalink: /about/
+permalink: /about
 header:
   overlay_image: /assets/images/road.jpg
   actions:

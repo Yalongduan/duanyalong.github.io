@@ -1,5 +1,5 @@
 ---
-layout: single
+# layout: single
 title:  "Welcome to Jekyll!"
 date:   2024-06-09 14:09:15 +0800
 categories: 项目搭建

@@ -1,7 +1,7 @@
 ---
 layout: categories
 title: 分类
-permalink: /categories/
+permalink: /categories
 author_profile: true
 header:
   overlay_image: /assets/images/road.jpg
